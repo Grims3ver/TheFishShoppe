@@ -2258,7 +2258,7 @@ MonoBehaviour:
   unsnapCenterWindow: 0.33
   maxSnapDistance: 15
   panAction: {fileID: -6375535393067281425, guid: 6be384792ee5668459074edc2ec3552d, type: 3}
-  panSpeed: 1
+  panSpeed: 10
   panDistanceScale: 0.002
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
