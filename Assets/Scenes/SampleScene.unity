@@ -453,7 +453,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 1000
-  field of view: 60
+  field of view: 71.075356
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1672,7 +1672,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1576756680}
   m_Layer: 0
-  m_Name: CenterFocus
+  m_Name: FocusPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1953,7 +1953,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2118737946}
   m_Layer: 0
-  m_Name: CameraPivot
+  m_Name: CameraCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1988,6 +1988,7 @@ GameObject:
   - component: {fileID: 2121405588}
   - component: {fileID: 2121405590}
   - component: {fileID: 2121405583}
+  - component: {fileID: 2121405591}
   m_Layer: 0
   m_Name: VCAM_Orbit
   m_TagString: Untagged
@@ -2083,7 +2084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineOrbitalFollow
   TargetOffset: {x: 0, y: 0, z: 0}
   TrackerSettings:
-    BindingMode: 4
+    BindingMode: 5
     PositionDamping: {x: 1, y: 1, z: 1}
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
@@ -2115,7 +2116,7 @@ MonoBehaviour:
   VerticalAxis:
     Value: 0
     Center: 0
-    Range: {x: -5, y: 20}
+    Range: {x: -5, y: 10}
     Wrap: 0
     Recentering:
       Enabled: 0
@@ -2237,8 +2238,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineFollowZoom
   Width: 5
-  Damping: 0.48
-  FovRange: {x: 3, y: 60}
+  Damping: 0.37
+  FovRange: {x: 1, y: 76.536964}
+--- !u!114 &2121405591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121405582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0021333b0dbbc54b90ae23ce3ef290b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PanSlider
+  mainCam: {fileID: 330585545}
+  focusTarget: {fileID: 1576756680}
+  pivotCenter: {fileID: 2118737946}
+  tankBounds: {fileID: 166203962}
+  mode: 0
+  useKeyboard: 1
+  useMouseRMB: 1
+  keyboardSpeed: 1.5
+  mouseScale: 1.5
+  invert: 1
+  maxStepPerSec: 1
+  followRate: 12
+  doubleClickTime: 0.25
+  doubleClickMaxMove: 8
+  holdAsDragTime: 0.25
+  recenterBoostRate: 40
+  recenterBoostDuration: 0.25
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
