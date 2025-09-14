@@ -245,6 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: befb81195772868478e22ad6ebb50a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FocusTarget
+  weight: 1
   focusOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &166203960
 GameObject:
@@ -479,8 +480,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.043619387, y: 0, z: 0, w: 0.99904823}
-  m_LocalPosition: {x: 0, y: 0.75, z: -3.5}
+  m_LocalRotation: {x: 0.043619394, y: 0, z: 0, w: 0.99904823}
+  m_LocalPosition: {x: 0, y: 1.0550451, z: -3.4866815}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -815,6 +816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: befb81195772868478e22ad6ebb50a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FocusTarget
+  weight: 1
   focusOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &427536567
 GameObject:
@@ -940,6 +942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: befb81195772868478e22ad6ebb50a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FocusTarget
+  weight: 1
   focusOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &494004761
 GameObject:
@@ -1228,6 +1231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: befb81195772868478e22ad6ebb50a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FocusTarget
+  weight: 1
   focusOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &1265287143
 GameObject:
@@ -1388,6 +1392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: befb81195772868478e22ad6ebb50a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FocusTarget
+  weight: 1
   focusOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &1416101124
 GameObject:
@@ -1626,6 +1631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: befb81195772868478e22ad6ebb50a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FocusTarget
+  weight: 1
   focusOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &1506482079
 GameObject:
@@ -1672,7 +1678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1576756680}
   m_Layer: 0
-  m_Name: FocusPoint
+  m_Name: VCAM_Orbit Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1817,6 +1823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: befb81195772868478e22ad6ebb50a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FocusTarget
+  weight: 1
   focusOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &2117856113
 GameObject:
@@ -1942,6 +1949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: befb81195772868478e22ad6ebb50a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FocusTarget
+  weight: 1
   focusOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &2118737945
 GameObject:
@@ -1985,10 +1993,11 @@ GameObject:
   - component: {fileID: 2121405587}
   - component: {fileID: 2121405586}
   - component: {fileID: 2121405585}
-  - component: {fileID: 2121405588}
+  - component: {fileID: 2121405593}
   - component: {fileID: 2121405590}
   - component: {fileID: 2121405583}
   - component: {fileID: 2121405591}
+  - component: {fileID: 2121405592}
   m_Layer: 0
   m_Name: VCAM_Orbit
   m_TagString: Untagged
@@ -2037,7 +2046,7 @@ MonoBehaviour:
         DecelTime: 0.2
     - Name: Orbit Scale
       Owner: {fileID: 2121405585}
-      Enabled: 0
+      Enabled: 1
       Input:
         InputAction: {fileID: 9110951566968736026, guid: 6be384792ee5668459074edc2ec3552d, type: 3}
         Gain: -1
@@ -2046,28 +2055,6 @@ MonoBehaviour:
       Driver:
         AccelTime: 0
         DecelTime: 0
-    - Name: Look X (Pan)
-      Owner: {fileID: 2121405588}
-      Enabled: 1
-      Input:
-        InputAction: {fileID: -6752054646436755726, guid: 6be384792ee5668459074edc2ec3552d, type: 3}
-        Gain: 10
-        CancelDeltaTime: 0
-      InputValue: 0
-      Driver:
-        AccelTime: 0.2
-        DecelTime: 0.2
-    - Name: Look Y (Tilt)
-      Owner: {fileID: 2121405588}
-      Enabled: 1
-      Input:
-        InputAction: {fileID: -6752054646436755726, guid: 6be384792ee5668459074edc2ec3552d, type: 3}
-        Gain: 10
-        CancelDeltaTime: 0
-      InputValue: 0
-      Driver:
-        AccelTime: 0.2
-        DecelTime: 0.2
   PlayerIndex: -1
   AutoEnableInputs: 1
 --- !u!114 &2121405585
@@ -2084,7 +2071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineOrbitalFollow
   TargetOffset: {x: 0, y: 0, z: 0}
   TrackerSettings:
-    BindingMode: 5
+    BindingMode: 0
     PositionDamping: {x: 1, y: 1, z: 1}
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
@@ -2106,7 +2093,7 @@ MonoBehaviour:
   HorizontalAxis:
     Value: 0
     Center: 0
-    Range: {x: 0, y: 360}
+    Range: {x: -180, y: 180}
     Wrap: 1
     Recentering:
       Enabled: 0
@@ -2114,9 +2101,9 @@ MonoBehaviour:
       Time: 2
     Restrictions: 0
   VerticalAxis:
-    Value: 0
+    Value: 5
     Center: 0
-    Range: {x: -5, y: 10}
+    Range: {x: -5, y: 45}
     Wrap: 0
     Recentering:
       Enabled: 0
@@ -2184,47 +2171,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121405582}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.043619387, y: 0, z: 0, w: 0.99904823}
-  m_LocalPosition: {x: 0, y: 0.75, z: -3.5}
+  m_LocalRotation: {x: 0.043619394, y: 0, z: 0, w: 0.99904823}
+  m_LocalPosition: {x: 0, y: 1.0550451, z: -3.4866815}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2121405588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121405582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62d54399b04b4fa48a73e121d4937dd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachinePanTilt
-  ReferenceFrame: 1
-  RecenterTarget: 0
-  PanAxis:
-    Value: 0
-    Center: 0
-    Range: {x: 0, y: 360}
-    Wrap: 1
-    Recentering:
-      Enabled: 0
-      Wait: 1
-      Time: 2
-    Restrictions: 0
-  TiltAxis:
-    Value: 5
-    Center: 5
-    Range: {x: -10, y: 10}
-    Wrap: 0
-    Recentering:
-      Enabled: 0
-      Wait: 1
-      Time: 2
-    Restrictions: 0
 --- !u!114 &2121405590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2256,19 +2209,76 @@ MonoBehaviour:
   focusTarget: {fileID: 1576756680}
   pivotCenter: {fileID: 2118737946}
   tankBounds: {fileID: 166203962}
-  mode: 0
-  useKeyboard: 1
-  useMouseRMB: 1
-  keyboardSpeed: 1.5
+  focusMask:
+    serializedVersion: 2
+    m_Bits: 128
+  panSpace: 0
+  panKeyboard: 1
+  panRMB: 1
+  kbSpeed: 1.5
   mouseScale: 1.5
-  invert: 1
-  maxStepPerSec: 1
-  followRate: 12
+  maxPanStepPerSec: 0.35
+  invertX: 0
+  invertY: 1
+  steerOnScroll: 1
+  zoomInBias: 0.35
+  zoomOutBias: 0.15
+  scrollDeadzone: 0.01
+  quietAfterPan: 0.6
+  centerWindow: 0.18
+  releaseWindow: 0.4
+  snapDwell: 0.35
+  resnapCooldown: 0.5
+  followSmoothTime: 0.1
+  handoffBlendTime: 0.15
+  targetLowpassRate: 20
   doubleClickTime: 0.25
   doubleClickMaxMove: 8
   holdAsDragTime: 0.25
-  recenterBoostRate: 40
-  recenterBoostDuration: 0.25
+  recenterBoostTime: 0.25
+  recenterBoostSmooth: 0.07
+--- !u!114 &2121405592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121405582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbfed2d4c24bbce42b421e2e79f1cd0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  mainCam: {fileID: 330585545}
+  focusTarget: {fileID: 1576756680}
+  pivotCenter: {fileID: 2118737946}
+  tankBounds: {fileID: 166203962}
+  focusMask:
+    serializedVersion: 2
+    m_Bits: 128
+  useMouseWheel: 1
+  scrollDeadzone: 0.01
+  centerWindow: 0.18
+  snapDwell: 0.35
+  followRate: 16
+  idleRate: 12
+  quietAfterPan: 0.5
+  releaseWindow: 0.38
+  releaseOnZoomOutThreshold: 0
+  resnapCooldown: 0.4
+--- !u!114 &2121405593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121405582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8b78ac948f05a46a6d8339a503172b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineHardLookAt
+  LookAtOffset: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
