@@ -2209,34 +2209,21 @@ MonoBehaviour:
   focusTarget: {fileID: 1576756680}
   pivotCenter: {fileID: 2118737946}
   tankBounds: {fileID: 166203962}
-  focusMask:
-    serializedVersion: 2
-    m_Bits: 128
   panSpace: 0
   panKeyboard: 1
   panRMB: 1
   kbSpeed: 1.5
   mouseScale: 1.5
-  maxPanStepPerSec: 0.35
+  maxPanSpeedPerM: 1.2
   invertX: 0
-  invertY: 1
-  steerOnScroll: 1
-  zoomInBias: 0.35
-  zoomOutBias: 0.15
-  scrollDeadzone: 0.01
-  quietAfterPan: 0.6
-  centerWindow: 0.18
-  releaseWindow: 0.4
-  snapDwell: 0.35
-  resnapCooldown: 0.5
+  panAccelTime: 0.08
+  panDecelTime: 0.12
+  mouseLowpassRate: 24
   followSmoothTime: 0.1
-  handoffBlendTime: 0.15
-  targetLowpassRate: 20
+  lockY: 1
   doubleClickTime: 0.25
   doubleClickMaxMove: 8
   holdAsDragTime: 0.25
-  recenterBoostTime: 0.25
-  recenterBoostSmooth: 0.07
 --- !u!114 &2121405592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2244,7 +2231,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121405582}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dbfed2d4c24bbce42b421e2e79f1cd0a, type: 3}
   m_Name: 
